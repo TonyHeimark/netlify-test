@@ -11,18 +11,18 @@ export default () => {
         <a href="https://github.com/TonyHeimark"><i class="fab fa-github-square"></i></a>
       </div>
       <div className="contact-form-container">
-        <form name="contact" netlify>
+        <form name="contact" method="POST" data-netlify="true">
           <p>
-            <label>Name <input type="text" name="name" /></label>
+            <label>Your Name: <input type="text" name="name" /></label>   
           </p>
           <p>
-            <label>Email <input type="email" name="email" /></label>
+            <label>Your Email: <input type="email" name="email" /></label>
           </p>
           <p>
-            <label>Message <textarea type="text" name="message" /></label>
+            <label>Message: <textarea name="message"></textarea></label>
           </p>
           <p>
-            <button className="form-button" type="submit">Send</button>
+            <button type="submit">Send</button>
           </p>
         </form>
       </div>
