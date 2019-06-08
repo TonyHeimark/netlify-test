@@ -243,11 +243,6 @@ button:hover{
     transition: .3s;
   }
 
-.contact-image-container img{
-  width: 100%;
-  
-}
-
 .Contact h2{
   margin: 75px 0 20px 0px;
   font-size: 4em;
