@@ -2,8 +2,12 @@
 
 body{
   margin: 0;
-  height: 100vh;
+  height: fit-content;
   font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
 }
 
 a{
@@ -71,7 +75,8 @@ button{
   font-size: 1.5em;
   border: 0;
   padding: 10px 25px;
-  min-height: 40px
+  min-height: 40px;
+  margin-left: -1px;
 }
 
 button:hover{
@@ -88,6 +93,7 @@ button:hover{
 .Navigation ul li .first-btn{
   padding-left: 125px;
   border-radius: 5px 0 0 0;
+  margin-left: 0;
 }
 
 .Navigation ul li .last-btn{
@@ -126,9 +132,11 @@ button:hover{
 
 /* Tab backgrounds */
 
-.background{
+.background {
+  -webkit-transition: .5s;
   transition: .5s;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   width: 100%;
   position: relative;
 }
@@ -159,12 +167,14 @@ button:hover{
 
 /* General tab styling */
 
-.page{
+.page {
   width: 80%;
-  height: 70vh;
+  max-height: 70vh;
+  height: auto;
   overflow: hidden;
   padding: 50px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
+  margin-top: -1px;
 }
 
 /* Home tab */
@@ -262,6 +272,7 @@ button:hover{
   display: grid;
   grid-template-columns: 1.5fr 0.5fr;
   border-radius: 0 5px 5px 5px;
+  max-height: 70vh;
 }
 
 .projects{
@@ -358,7 +369,7 @@ button:hover{
 
 
 .project-text{
-  padding: 75px 75px 50px 75px;
+  padding: 40px 75px 40px 40px;
   color: white;
 }
 
@@ -448,6 +459,7 @@ button:hover{
   .Portfolio{
     grid-template-columns: 
     1.2fr 0.8fr;
+    max-height: fit-content;
   }
 
   .Project{
