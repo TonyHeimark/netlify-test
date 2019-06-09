@@ -115,15 +115,8 @@ button:hover{
   border-radius: 5px 5px 0 0;
 }
 
-.Navigation ul li .About-active{
-  background-color: #7d314c;
-  padding-top: 20px;
-  transition: .5s;
-  border-radius: 5px 5px 0 0;
-}
-
 .Navigation ul li .Contact-active{
-  background-color: #2D5D58;
+  background-color: #224945;
   padding-top: 20px;
   transition: .5s;
   padding-right: 50px;
@@ -147,10 +140,6 @@ button:hover{
 
 .contact-background{
   background-color: rgb(128, 206, 195);
-}
-
-.about-background{
-  background-color: #f0a0bc;
 }
 
 .portfolio-background{
@@ -219,10 +208,11 @@ button:hover{
 /* Contact tab */
 
 .Contact{
-  background-color: #2D5D58;
+  background-color: #224945;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  min-height: 680px;
 }
 
 .contact-text{
@@ -230,34 +220,88 @@ button:hover{
 }
 
 .contact-text a:hover{
-  color: #80CEC3;
+  color: #C2E0E0;
   transition: .3s;
 }
 
 .Contact a i{
   font-size: 4em;
-  margin: 50px 20px 0 0;
+  margin: 260px 20px 0 0;
 }
   .Contact a i:hover{
-    color: #80CEC3;
+    color: #C2E0E0;
     transition: .3s;
   }
 
 .Contact h2{
-  margin: 75px 0 20px 0px;
-  font-size: 4em;
+  margin: 75px 0 41px 0px;
+  font-size: 3em;
 }
 
-/* About tab */
+.contact-form-container{
+  margin-top: 0px;
+}
 
-.About{
-  background-color: #7d314c;
+.Contact input{
+  height: 40px;
+  padding: 5px 0 0 0px;
+  font-size: 1.3rem;
+  min-width: 270px;
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #C2E0E0;
+  display: block;
+  margin-top: -40px;
+  transition: margin linear .3s;
   color: white;
 }
 
-.About h2{
-  margin: 75px 0 20px 75px;
-  font-size: 4em;
+.Contact textarea{
+  font-size: 1.3rem;
+  height: 150px;
+  min-width: 270px;
+  width: 80%;
+  background-color: transparent;
+  border: 2px solid #C2E0E0;
+  border-right: none;
+  border-left: none;
+  padding: 5px 0 0 0;
+  margin-left: 0px;
+  display: block;
+  margin-top: 5px;
+  color: white;
+}
+
+form button {
+  border-radius: 5px;
+  display: block;
+  margin: 0 0 10px 0;
+  background-color: transparent;
+  border: 2px solid #C2E0E0;
+  font-size: 1.5em;
+  width: auto;
+  text-align: left;
+}
+
+form button:hover{
+  background-color: #C2E0E0;
+  color: black;
+}
+
+ form label{
+  display: block;
+  margin-top: 40px;
+  color: #C2E0E0;
+}
+
+.form-label-name{
+  margin-top: 173px;
+}
+
+form .Active{
+  margin-top: 0;
+  transition: margin linear .3s;
 }
 
 /* Portfolio tab */
@@ -267,7 +311,8 @@ button:hover{
   display: grid;
   grid-template-columns: 1.5fr 0.5fr;
   border-radius: 0 5px 5px 5px;
-  max-height: 70vh;
+  max-height: 650px;
+  min-height: 650px;
 }
 
 .projects{
@@ -373,13 +418,13 @@ button:hover{
 }
 
 .project-text ul{
-  margin: 20px 0;
+  margin: 40px 0 70px;
   padding-left: 20px;
 }
 
 .project-text .project-tech{
   text-align: left;
-  margin: 0;
+  margin: 5px 0 0 0;
   padding-left: 0;
   font-size: 1.2em;
 }
@@ -454,7 +499,8 @@ button:hover{
   .Portfolio{
     grid-template-columns: 
     1.2fr 0.8fr;
-    max-height: fit-content;
+    max-height: 600px;
+    min-height: 600px;
   }
 
   .Project{
@@ -463,6 +509,10 @@ button:hover{
 
   .project-img-container{
     display: none;
+  }
+
+  .contact-text{
+    padding-left: 20px;
   }
 
 }
@@ -528,7 +578,8 @@ button:hover{
 
   .Portfolio{
     grid-template-columns: 1fr;
-    min-height: 700px;
+    max-height: auto;
+    min-height: 800px;
   }
 
   .projects .project-btn-general{
@@ -558,6 +609,30 @@ button:hover{
 
   .project-text{
     padding: 20px;
+  }
+
+  .Contact{
+    grid-template-columns: 1fr;
+    max-height: auto;
+    height: fit-content;
+    min-height: 1000px;
+  }
+
+  form{
+    margin-left: 20px;
+  }
+
+  .form-label-name{
+    margin-top: 0
+  }
+
+  .Contact a i{
+    margin-top: 50px;
+  }
+
+  .contact-form-container{
+    grid-row: 2;
+    margin-top: 0px;
   }
 }
 
@@ -708,5 +783,32 @@ button:hover{
     padding: 100px 25px 25px 25px;
     border-radius: 0 0 5px 5px;
     margin-right: 0;
+    min-height: 650px;
+    max-height: 650px;
+  }
+
+  .Portfolio{
+    min-height: 1000px;
+    height: auto;
+    max-height: auto;
+  }
+
+  .Contact{
+    grid-template-columns: 1fr;
+    max-height: auto;
+    height: fit-content;
+    min-height: 1000px;
+  }
+
+  .contact-text{
+    padding-left: 0;
+  }
+
+  form{
+    margin-left: 0;
+  }
+
+  .Contact h2{
+    font-size: 2.5em;
   }
 }

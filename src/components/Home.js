@@ -5,7 +5,7 @@ export default (props) => {
     <div className="Home page">
         <div>
             <h1>Hi, I'm Tony</h1>
-            <p>A Frontend-developer based in Oslo</p>
+            <p>A Front end developer based in Oslo</p>
             <button className="cta-btn" onClick={props.handlePortfolio}>Check out my work!</button>
         </div>
         <div>

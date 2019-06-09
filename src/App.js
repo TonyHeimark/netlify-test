@@ -3,7 +3,6 @@ import './styles/App.css';
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
-import About from "./components/About";
 import Contact from "./components/Contact";
 import { Transition, animated, config } from 'react-spring/renderprops';
 
@@ -48,23 +47,6 @@ export default class App extends React.Component {
         this.setState(()=> ({
           page: Portfolio,
           item: 2
-        }));
-      }, 500);
-    }
-  }
-
-  handleAbout = () => {
-    if (this.state.page !== About){
-      this.setState(()=> ({
-        bgClass: "about-background background",
-        page: undefined,
-        id: 3
-      }));
-  
-      setTimeout(() => {
-        this.setState(()=> ({
-          page: About,
-          item: 3
         }));
       }, 500);
     }
@@ -136,7 +118,6 @@ export default class App extends React.Component {
         isActive={this.state.id}
         handleHome={this.handleHome}
         handlePortfolio={this.handlePortfolio}
-        handleAbout={this.handleAbout}
         handleContact={this.handleContact}
         handleHamburger={this.handleHamburger}
       />
