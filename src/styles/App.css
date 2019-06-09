@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+*{
+  outline: none;
+}
+
 body{
   margin: 0;
   height: fit-content;
@@ -232,7 +236,7 @@ button:hover{
 
 .Contact a i{
   font-size: 4em;
-  margin: 260px 20px 0 0;
+  margin: 101px 20px 0 0;
 }
   .Contact a i:hover{
     color: #C2E0E0;
@@ -265,17 +269,17 @@ button:hover{
 
 .Contact textarea{
   font-size: 1.3rem;
-  height: 150px;
+  height: 40px;
   min-width: 270px;
   width: 80%;
   background-color: transparent;
-  border: 2px solid #C2E0E0;
-  border-right: none;
-  border-left: none;
+  border: none;
+  border-bottom: 2px solid #C2E0E0;
   padding: 5px 0 0 0;
   margin-left: 0px;
   display: block;
-  margin-top: 5px;
+  transition: height linear .3s;
+  margin-top: -40px;
   color: white;
 }
 
@@ -308,6 +312,12 @@ form button:hover{
 form .Active{
   margin-top: 0;
   transition: margin linear .3s;
+}
+
+form .ActiveField{
+  margin-top: 0;
+  height: 150px;
+  transition: height linear .3s;
 }
 
 /* Portfolio tab */

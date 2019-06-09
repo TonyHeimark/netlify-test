@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 export default (props) => {
     const [active, setActive] = useState(false)
     const [activeTwo, setActiveTwo] = useState(false)
+    const [activeThree, setActiveThree] = useState(false)
 
     const toggleActive = () => {
        if (active === false){
@@ -28,6 +29,18 @@ export default (props) => {
          }
      }
 
+     const toggleActiveThree = () => {
+        if (activeThree === false){
+            setActiveThree(true)
+         } 
+     }
+ 
+     const removeActiveThree = (e) => {
+         if (!e.target.value && activeThree) {
+             setActiveThree(false)
+         }
+     }
+
   return (
     <form name="contact" method="post" autocomplete="off">
         <input type="hidden" name="form-name" value="contact" autocomplete="false"/>
@@ -38,7 +51,7 @@ export default (props) => {
         <label className="form-label">Your Email: <input onFocus={toggleActiveTwo} onBlur={removeActiveTwo}  className={activeTwo ? "Active" : "Inactive"} type="email" name="email"/></label>
         </p>
         <p>
-        <label className="form-label-message">Message: <textarea name="message"></textarea></label>
+        <label className="form-label-message">Message: <textarea onFocus={toggleActiveThree} onBlur={removeActiveThree} className={activeThree ? "ActiveField" : "Inactive"} name="message"></textarea></label>
         </p>
         <p>
         <button type="submit">Send</button>
