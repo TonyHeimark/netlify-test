@@ -153,7 +153,7 @@ button:hover{
 }
 
 .portfolio-background{
-  background-color: #f07b51;
+  background: #000;
 }
 
 .project2-background{
@@ -327,30 +327,30 @@ form .ActiveField{
   display: grid;
   grid-template-columns: 1.5fr 0.5fr;
   border-radius: 0 5px 5px 5px;
-  max-height: 650px;
-  min-height: 650px;
+  max-height: 750px;
+  min-height: 750px;
 }
 
 .projects{
   background-color: #17161D;
-  padding: 75px 40px 0px 0px;
+  padding: 75px 0px 0px 0px;
 }
 
 .projects h2{
-  margin: 0 0 0 75px;
+  margin: 0 0 0 50px;
   color: white;
   font-size: 2em;
 }
 
 .projects hr{
-  margin: 0 0 30px 75px;
+  margin: 0 0 30px 50px;
 }
 
 .projects button{
   display: block;
   background-color: transparent;
-  padding-left: 75px;
-  width: 300px;
+  padding-left: 50px;
+  width: 350px;
   text-align: left;
   color: rgba(255, 255, 255, 0.75);
 }
@@ -364,16 +364,24 @@ form .ActiveField{
   border-radius: 0 5px 5px 0;
 }
 
+.eye-green{
+  color: #9ee9cc;
+}
+
+.eye-red{
+  color: rgb(226, 158, 158)
+}
+
 .projects i {
   margin-right: 20px;
 }
 
 .projects .project1-btn{
-  background-color: #252a2a;
+  background-color: #13426C;
 }
 
 .projects .project2-btn{
-  background-color: #005031;
+  background-color: #1f4134;
 }
 
 .projects .project3-btn{
@@ -397,11 +405,11 @@ form .ActiveField{
 /* single project backgrounds */
 
 .project1{
-  background-color: #252a2a;
+  background-color: #13426C;
 }
 
 .project2{
-  background-color: #005031;
+  background-color: #1f4134;
 }
 
 .project3{
@@ -427,7 +435,7 @@ form .ActiveField{
 
 
 .project-text{
-  padding: 40px 75px 40px 40px;
+  padding: 75px 40px 40px 75px;
   color: white;
 }
 
@@ -538,6 +546,11 @@ form .ActiveField{
 
   .project-text{
     grid-row: 2;
+  }
+
+  .project-text{
+    padding: 40px;
+    color: white;
   }
 
   .contact-text{

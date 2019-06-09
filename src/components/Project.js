@@ -10,29 +10,29 @@ export default (props) => {
     let technologies = []
 
     if (props.item === 1){
-        technologies = ["HTML5", "CSS3", "JavaScript"]
-        gitUrl = "#"
-        projectUrl = "#"
+        technologies = ["React", "CSS3", "JavaScript", "Create-React-App"]
+        gitUrl = "https://github.com/TonyHeimark/SpaceX-Microsite"
+        projectUrl = "https://spacex-microsite.netlify.com/"
         styles = "project1 Project"
-        title = "Re-Cycle"
-        imgUrl = require("../images/biker.png")
-        text = "This is one of my most recent school projects. The task was to create a simple website for an imaginary company named Re-Cycle that offered guided cycling tours in and around a town of choice."
+        title = "SpaceX Microsite"
+        imgUrl = require("../images/x.png")
+        text = "The task was to make a microsite for either SpaceX or NASA using their API. I chose to go with SpaceX and make a site for people to learn more about each individual launch. This is my first React project."
     } else if (props.item === 2){
-        technologies = ["HTML5", "CSS3"]
-        gitUrl = "#"
-        projectUrl = "#"
+        technologies = ["HTML5", "CSS3", "JavaScript"]
+        gitUrl = "https://github.com/TonyHeimark/Workflow-Noroff-Frontend-Page"
+        projectUrl = "https://tonyheimark-noroff-frontend-redesign.netlify.com/"
         styles = "project2 Project"
-        title = "Nice Cream"
-        imgUrl = require("../images/ice-cream.png")
-        text = "This is one of my recent school projects. The task was to make a simple website for an imaginary ice cream company named Nice Cream with Home and Order as the only pages."
+        title = "Front End Page"
+        imgUrl = require("../images/noroff-logo.png")
+        text = "This is one of my recent school projects. The task was to redesign the current Front-end page at the Noroff site. This was a group project where we put together a small agile team, worked in sprints and made good use of Git."
     } else if (props.item === 3){
         technologies = ["HTML5", "CSS3", "JavaScript"]
-        gitUrl = "#"
-        projectUrl = "#"
+        gitUrl = "https://github.com/TonyHeimark/Semester-Project-UN-Students"
+        projectUrl = "https://tonyheimark-semester-project.netlify.com/"
         styles = "project3 Project"
         title = "UN-Students"
         imgUrl = require("../images/peace.png")
-        text = "This is the project I'm currently working on as my semester project. The task is to create a new website for the UN-Students Oslo to attract more students to their cause."
+        text = "This was my semester project for the first semester, Media was provided by UN-Students The task was to create a new website for the UN-Students Oslo to attract more students to their cause."
     }
 
   return (
