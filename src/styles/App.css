@@ -161,7 +161,7 @@ button:hover{
 }
 
 .project3-background{
-  background-color: rgb(169, 255, 248);
+  background-color: #A9FFF8;
 }
 
 /* General tab styling */
@@ -676,7 +676,7 @@ form .ActiveField{
   }
 
   .Contact a i{
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .contact-form-container{
@@ -800,11 +800,19 @@ form .ActiveField{
     background-color: transparent !important;
   }
 
+  .Contact button{
+    padding: 10px 25px;
+  }
+
   .cta-btn{
     margin: 30px 0 0 30px;
     font-size: 1.3em;
     padding: 10px 25px;
     width: 250px;
+  }
+
+  form{
+    margin-top: -50px;
   }
 
   .cta-btn:hover{
@@ -895,14 +903,6 @@ form .ActiveField{
     min-height: 1000px;
   }
 
-  .contact-text{
-    padding-left: 0;
-  }
-
-  form{
-    margin-left: 0;
-  }
-
   .Contact h2{
     font-size: 2.5em;
   }
@@ -919,4 +919,16 @@ form .ActiveField{
     font-size: 1em;
     line-height: 25px;
   }
+}
+
+@media (max-width: 350px){
+
+  .contact-text{
+    padding-left: 0;
+  }
+
+  form{
+    margin-left: 0;
+  }
+
 }
