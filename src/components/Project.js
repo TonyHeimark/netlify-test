@@ -52,7 +52,7 @@ export default (props) => {
                     href={projectUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                ><i class="far fa-eye"></i>View Project</a>
+                ><i className="far fa-eye"></i>View Project</a>
             </button>
             <button
                 className={props.ctaStyle}
@@ -61,7 +61,7 @@ export default (props) => {
                     href={gitUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                ><i class="fab fa-github"></i>View Code
+                ><i className="fab fa-github"></i>View Code
                 </a>
             </button>
         </div>

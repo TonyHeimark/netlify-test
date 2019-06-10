@@ -42,8 +42,8 @@ export default (props) => {
      }
 
   return (
-    <form name="contact" method="post" autocomplete="off">
-        <input type="hidden" name="form-name" value="contact" autocomplete="false"/>
+    <form name="contact" method="post" autoComplete="off">
+        <input type="hidden" name="form-name" value="contact" autoComplete="false"/>
         <p>
         <label className="form-label-name">Your Name: <input onFocus={toggleActive} onBlur={removeActive} className={active ? "Active" : "Inactive"} type="text" name="name"/></label>
         </p>

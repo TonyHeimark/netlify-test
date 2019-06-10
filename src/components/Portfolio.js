@@ -97,21 +97,21 @@ export default class App extends React.Component {
         className={this.state.item === 1 ? this.state.btnStyles : ""}
         onClick={this.handleProjectOne}
       >
-        {this.state.item === 1 ? <i class="far fa-eye eye-green"></i> : <i class="far fa-eye-slash eye-red"></i>
+        {this.state.item === 1 ? <i className="far fa-eye eye-green"></i> : <i className="far fa-eye-slash eye-red"></i>
         }SpaceX - Launches
       </button>
       <button
         className={this.state.item === 2 ? this.state.btnStyles : ""}
         onClick={this.handleProjectTwo}
       >
-        {this.state.item === 2 ? <i class="far fa-eye eye-green"></i> : <i class="far fa-eye-slash eye-red"></i>
+        {this.state.item === 2 ? <i className="far fa-eye eye-green"></i> : <i className="far fa-eye-slash eye-red"></i>
         }Frontend School
       </button>
       <button
         className={this.state.item === 3 ? this.state.btnStyles : ""}
         onClick={this.handleProjectThree}
       >
-      {this.state.item === 3 ? <i class="far fa-eye eye-green"></i> : <i class="far fa-eye-slash eye-red"></i>
+      {this.state.item === 3 ? <i className="far fa-eye eye-green"></i> : <i className="far fa-eye-slash eye-red"></i>
       }UN-Students Oslo
       </button>
       </div>

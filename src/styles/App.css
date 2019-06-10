@@ -799,6 +799,22 @@ form .ActiveField{
     grid-row: 2;
     margin-top: 0px;
   }
+
+  .portfolio-background{
+    height: 1550px;
+  }
+  
+  .project2-background{
+    height: 1550px;
+  }
+  
+  .project3-background{
+    height: 1550px;
+  }
+
+  .contact-background{
+    height: 1300px;
+  }
 }
 
 @media (max-width: 700px){
