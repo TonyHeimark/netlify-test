@@ -154,9 +154,6 @@ button:hover{
   -o-transition: .5s;
   transition: .5s;
   min-height: 100vh;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   width: 100%;
   position: relative;
   -webkit-box-sizing: border-box;
@@ -165,22 +162,27 @@ button:hover{
 
 .home-background{
   background-color: #87AAEF;
+  height: 1080px;
 }
 
 .contact-background{
   background-color: rgb(128, 206, 195);
+  height: 1080px;
 }
 
 .portfolio-background{
   background: #000;
+  height: 1080px;
 }
 
 .project2-background{
   background-color: rgb(195, 255, 205);
+  height: 1080px;
 }
 
 .project3-background{
   background-color: #A9FFF8;
+  height: 1080px;
 }
 
 /* General tab styling */
@@ -543,8 +545,45 @@ form .ActiveField{
   transition: .3s;
 }
 
+@media (max-width: 1500px){
+
+  .Project{
+    grid-template-columns: 1fr;
+  }
+
+  .project-img-container{
+    display: none;
+  }
+
+}
+
 
 @media (max-width: 1200px){
+
+  .home-background{
+    height: 800px;
+  }
+  
+  .contact-background{
+    height: 1000px;
+  }
+  
+  .portfolio-background{
+    height: 1320px;
+  }
+  
+  .project2-background{
+    height: 1320px;
+  }
+  
+  .project3-background{
+    height: 1320px;
+  }
+  
+
+  .project-img-container{
+    display: block;
+  }
 
   /* home */
 
