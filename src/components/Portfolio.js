@@ -105,14 +105,14 @@ export default class App extends React.Component {
         onClick={this.handleProjectTwo}
       >
         {this.state.item === 2 ? <i class="far fa-eye eye-green"></i> : <i class="far fa-eye-slash eye-red"></i>
-        }School Page
+        }Frontend School
       </button>
       <button
         className={this.state.item === 3 ? this.state.btnStyles : ""}
         onClick={this.handleProjectThree}
       >
       {this.state.item === 3 ? <i class="far fa-eye eye-green"></i> : <i class="far fa-eye-slash eye-red"></i>
-      }UN-Students
+      }UN-Students Oslo
       </button>
       </div>
       
