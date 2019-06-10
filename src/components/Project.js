@@ -16,7 +16,7 @@ export default (props) => {
         styles = "project1 Project"
         title = "SpaceX Microsite"
         imgUrl = require("../images/x.png")
-        text = "The task was to make a microsite for either SpaceX or NASA using their API. I chose to go with SpaceX and make a site for people to learn more about each individual launch. This is my first React project."
+        text = "The task was to make a microsite for either SpaceX or NASA using their API. I chose to go with SpaceX and make a site for people to learn more about each individual launch. This is my first React project as well as my first time working with an API to this extent. I made use of React-router and some animation libraries aswell."
     } else if (props.item === 2){
         technologies = ["HTML5", "CSS3", "JavaScript"]
         gitUrl = "https://github.com/TonyHeimark/Workflow-Noroff-Frontend-Page"
@@ -32,7 +32,7 @@ export default (props) => {
         styles = "project3 Project"
         title = "UN-Students"
         imgUrl = require("../images/peace.png")
-        text = "This was my semester project for the first semester, Media was provided by UN-Students The task was to create a new website for the UN-Students Oslo to attract more students to their cause."
+        text = "This was my semester project for the first semester, Media was provided by UN-Students The task was to create a new website for the UN-Students Oslo to attract more students to their cause. It's fun to look back at projects like this, seeing how my perspective has changed and how much duplicate CSS I had."
     }
 
   return (

@@ -6,6 +6,8 @@
 
 body{
   margin: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   font-family: 'Montserrat', sans-serif;
 }
@@ -43,6 +45,8 @@ p{
   height: 3px;
   background-color: white;
   margin: 0 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   border-radius: 10px;
 }
@@ -58,14 +62,16 @@ p{
 
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
+  -ms-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-5px, -8px);
-  transform: rotate(45deg) translate(-5px, -8px);
+  -ms-transform: rotate(45deg) translate(-5px, -8px);
+      transform: rotate(45deg) translate(-5px, -8px);
   width: 35px;
 }
 
@@ -91,6 +97,8 @@ button{
 
 button:hover{
   background-color: #494949;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
   cursor: pointer;
 }
@@ -114,6 +122,8 @@ button:hover{
 .Navigation ul li .Home-active{
   background-color: #3D5585;
   padding-top: 20px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   border-radius: 5px 5px 0 0;
 }
@@ -121,6 +131,8 @@ button:hover{
 .Navigation ul li .Portfolio-active{
   background-color: #17161D;
   padding-top: 20px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   border-radius: 5px 5px 0 0;
 }
@@ -128,6 +140,8 @@ button:hover{
 .Navigation ul li .Contact-active{
   background-color: #224945;
   padding-top: 20px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   padding-right: 50px;
   border-radius: 5px 5px 0 0;
@@ -137,12 +151,16 @@ button:hover{
 
 .background {
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .home-background{
@@ -182,7 +200,9 @@ button:hover{
 .Home{
   background-color: #3D5585;
   border-radius: 0 5px 5px 5px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -221,7 +241,9 @@ button:hover{
 .Contact{
   background-color: #224945;
   color: white;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   min-height: 680px;
 }
@@ -232,6 +254,8 @@ button:hover{
 
 .contact-text a:hover{
   color: #C2E0E0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
@@ -241,6 +265,8 @@ button:hover{
 }
   .Contact a i:hover{
     color: #C2E0E0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
   }
 
@@ -264,6 +290,8 @@ button:hover{
   border-bottom: 2px solid #C2E0E0;
   display: block;
   margin-top: -40px;
+  -webkit-transition: margin linear .3s;
+  -o-transition: margin linear .3s;
   transition: margin linear .3s;
   color: white;
 }
@@ -279,6 +307,8 @@ button:hover{
   padding: 5px 0 0 0;
   margin-left: 0px;
   display: block;
+  -webkit-transition: height linear .3s;
+  -o-transition: height linear .3s;
   transition: height linear .3s;
   margin-top: -40px;
   margin-bottom: 40px;
@@ -313,12 +343,16 @@ form button:hover{
 
 form .Active{
   margin-top: 0;
+  -webkit-transition: margin linear .3s;
+  -o-transition: margin linear .3s;
   transition: margin linear .3s;
 }
 
 form .ActiveField{
   margin-top: 0;
   height: 150px;
+  -webkit-transition: height linear .3s;
+  -o-transition: height linear .3s;
   transition: height linear .3s;
 }
 
@@ -326,7 +360,9 @@ form .ActiveField{
 
 .Portfolio{
   background-color: #17161D;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1.5fr 0.5fr;
   grid-template-columns: 1.5fr 0.5fr;
   border-radius: 0 5px 5px 5px;
   max-height: 750px;
@@ -363,6 +399,8 @@ form .ActiveField{
 
 .projects .project-btn-general{
   color: white;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   border-radius: 0 5px 5px 0;
 }
@@ -400,7 +438,9 @@ form .ActiveField{
 .Project{
   width: 100%;
   height: 100vh;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1.25fr 0.75fr;
   grid-template-columns: 1.25fr 0.75fr;
   border-radius: 5px;
 }
@@ -426,7 +466,8 @@ form .ActiveField{
   max-height: 400px;
   max-width: 100%;
   margin-top: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project-img-container{
@@ -497,6 +538,8 @@ form .ActiveField{
 
 .project-text button:hover a{
   color: black;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
@@ -506,6 +549,7 @@ form .ActiveField{
   /* home */
 
   .Home{
+    -ms-grid-columns: 1.2fr .8fr;
     grid-template-columns: 1.2fr .8fr;
   }
   
@@ -526,6 +570,8 @@ form .ActiveField{
   /* Portfolio */
 
   .Portfolio{
+    -ms-grid-columns: 
+    1.2fr 0.8fr;
     grid-template-columns: 
     1.2fr 0.8fr;
     max-height: 1000px;
@@ -533,12 +579,17 @@ form .ActiveField{
   }
 
   .Project{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 
   .project-img-container{
+    -ms-grid-row: 1;
     grid-row: 1;
     padding: 0 200px 0 40px;
   }
@@ -548,6 +599,7 @@ form .ActiveField{
   }
 
   .project-text{
+    -ms-grid-row: 2;
     grid-row: 2;
   }
 
@@ -566,6 +618,7 @@ form .ActiveField{
   /* home */
 
   .Home{
+    -ms-grid-columns: 1.2fr .8fr;
     grid-template-columns: 1.2fr .8fr;
   }
   
@@ -609,6 +662,8 @@ form .ActiveField{
 
   .background{
     height: 100vh;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
     min-height: max-content;
     width: 100%;
   }
@@ -620,13 +675,26 @@ form .ActiveField{
     height: auto;
     overflow: visible;
     margin-bottom: 50px;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: 325px auto;
     grid-template-rows: 325px auto;
     max-height: auto;
     min-height: 1300px;
+  } 
+  
+  .Portfolio > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  } 
+  
+  .Portfolio > *:nth-child(2){
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
   }
 
   .project-img-container{
+    -ms-grid-row: 1;
     grid-row: 1;
     padding: 0 300px 0 20px;
   }
@@ -640,6 +708,7 @@ form .ActiveField{
   }
 
   .projects{
+    -ms-grid-row: 1;
     grid-row: 1;
     padding-top: 0;
   }
@@ -665,8 +734,11 @@ form .ActiveField{
   }
 
   .Contact{
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     max-height: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     min-height: 1000px;
   }
@@ -684,6 +756,7 @@ form .ActiveField{
   }
 
   .contact-form-container{
+    -ms-grid-row: 2;
     grid-row: 2;
     margin-top: 0px;
   }
@@ -694,6 +767,7 @@ form .ActiveField{
     /* Home */ 
 
   .Home{
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -835,7 +909,8 @@ form .ActiveField{
   }
   
   .nav-fade{
-    animation: slideOut .5s;
+    -webkit-animation: slideOut .5s;
+            animation: slideOut .5s;
   }
 
   .nav-hide{
@@ -844,12 +919,23 @@ form .ActiveField{
 
   .nav-show{
     display: block;
-    animation: appear .5s;
-    animation: slideIn .5s;
+    -webkit-animation: appear .5s;
+            animation: appear .5s;
+    -webkit-animation: slideIn .5s;
+            animation: slideIn .5s;
   }
 
   .hamburger{
     display: block;
+  }
+
+  @-webkit-keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @keyframes appear {
@@ -861,21 +947,47 @@ form .ActiveField{
     }
   }
   
-  @keyframes slideIn {
+  @-webkit-keyframes slideIn {
     0% {
-      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
     }
     100% {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
+  @-webkit-keyframes slideOut {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(150%);
+              transform: translateX(150%);
     }
   }
   
   @keyframes slideOut {
     0% {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
     100% {
-      transform: translateX(150%);
+      -webkit-transform: translateX(150%);
+              transform: translateX(150%);
     }
   }
 
@@ -902,8 +1014,11 @@ form .ActiveField{
   }
 
   .Contact{
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     max-height: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     min-height: 1000px;
   }
@@ -999,45 +1114,46 @@ form .ActiveField{
   }
 }
 
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
-{
-  .portfolio-background {
-    height: 1080px;
-  }
-
-  .home-background{
-    height: 980px;
-  }
-
-  .contact-background{
-    height: 1000px;
-  }
-
-@media(max-width: 930px){
-  .contact-background{
-    height: 1300px;
-  }
-
-  .portfolio-background {
-    height: 1580px;
-  }
-
-  .home-background{
-    height: 900px;
-  }
+@media not all and (min-resolution:.001dpcm) { 
+    @media {
+      .portfolio-background {
+        height: 1080px;
+    }
+  
+    .home-background{
+      height: 980px;
+    }
+  
+    .contact-background{
+      height: 1000px;
+    }
+  
+    @media(max-width: 930px){
+      .contact-background{
+        height: 1300px;
+      }
+  
+      .portfolio-background {
+        height: 1580px;
+    }
+  
+      .home-background{
+        height: 900px;
+      }
+    }
+  
+    @media(max-width: 700px){
+      .home-background{
+        height: 900px;
+      }
+  
+      .portfolio-background {
+          height: 1600px;
+      }
+  
+      .contact-background{
+        height: 1300px;
+      }
+    }
+    }
 }
-
-@media(max-width: 700px){
-  .home-background{
-    height: 900px;
-  }
-
-  .portfolio-background {
-      height: 1600px;
-  }
-
-  .contact-background{
-    height: 1300px;
-  }
-}
-  }
