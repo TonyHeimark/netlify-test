@@ -4,7 +4,7 @@ import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
-import { Transition, animated, config } from 'react-spring/renderprops';
+import Fade from "react-reveal/Fade";
 
 
 
@@ -121,21 +121,7 @@ export default class App extends React.Component {
         handleContact={this.handleContact}
         handleHamburger={this.handleHamburger}
       />
-      <Transition
-        reset
-        items={this.state.item}
-        from={{ display: 'none', transform: 'translate3d(0,100%,0)', WebkitTransform: 'translate3d(0,100%,0)'}}
-        enter={{ display: 'block', transform: 'translate3d(0,0%,0)', WebkitTransform: 'translate3d(0,0%,0)'}}
-        leave={{ display: 'none', transform: 'translate3d(0,-50%,0)', WebkitTransform: 'translate3d(0,-50%,0)'}}
-        config={ config.slow }
-      >
-      {show => show && (props => (
-        <animated.div style={props}>
-        {this.state.page ? <this.state.page handlePortfolio={this.handlePortfolio} handleProjectColor={this.handleProjectColor}/> : undefined}
-        
-        </animated.div>
-      ))}
-      </Transition>
+        {this.state.page ? <Fade bottom><this.state.page handlePortfolio={this.handlePortfolio} handleProjectColor={this.handleProjectColor}/></Fade>  : undefined}  
     </div>
     );
   }
