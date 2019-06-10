@@ -998,3 +998,46 @@ form .ActiveField{
     }
   }
 }
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{
+  .portfolio-background {
+    height: 1080px;
+  }
+
+  .home-background{
+    height: 980px;
+  }
+
+  .contact-background{
+    height: 1000px;
+  }
+
+@media(max-width: 930px){
+  .contact-background{
+    height: 1300px;
+  }
+
+  .portfolio-background {
+    height: 1580px;
+  }
+
+  .home-background{
+    height: 900px;
+  }
+}
+
+@media(max-width: 700px){
+  .home-background{
+    height: 900px;
+  }
+
+  .portfolio-background {
+      height: 1600px;
+  }
+
+  .contact-background{
+    height: 1300px;
+  }
+}
+  }
