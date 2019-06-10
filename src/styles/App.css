@@ -1127,27 +1127,6 @@ form .ActiveField{
 
 }
 
-@-moz-document url-prefix() {
-  .portfolio-background {
-      height: 1080px;
-  }
-
-  .project2-background{
-    height: 1080px;
-  }
-  
-  .project3-background{
-    height: 1080px;
-  }
-
-  .home-background{
-    height: 980px;
-  }
-
-  .contact-background{
-    height: 1000px;
-  }
-
   @media(max-width: 930px){
     .contact-background{
       height: 1300px;
@@ -1191,4 +1170,3 @@ form .ActiveField{
       height: 1300px;
     }
   }
-}
