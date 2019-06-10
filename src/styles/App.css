@@ -1077,6 +1077,14 @@ form .ActiveField{
       height: 1080px;
   }
 
+  .project2-background{
+    height: 1080px;
+  }
+  
+  .project3-background{
+    height: 1080px;
+  }
+
   .home-background{
     height: 980px;
   }
@@ -1094,6 +1102,14 @@ form .ActiveField{
       height: 1580px;
   }
 
+  .project2-background{
+    height: 1580px;
+  }
+  
+  .project3-background{
+    height: 1580px;
+  }
+
     .home-background{
       height: 900px;
     }
@@ -1108,52 +1124,16 @@ form .ActiveField{
         height: 1600px;
     }
 
+    .project2-background{
+      height: 1600px;
+    }
+    
+    .project3-background{
+      height: 1600px;
+    }
+
     .contact-background{
       height: 1300px;
     }
   }
-}
-
-@media not all and (min-resolution:.001dpcm) { 
-    @media {
-      .portfolio-background {
-        height: 1080px;
-    }
-  
-    .home-background{
-      height: 980px;
-    }
-  
-    .contact-background{
-      height: 1000px;
-    }
-  
-    @media(max-width: 930px){
-      .contact-background{
-        height: 1300px;
-      }
-  
-      .portfolio-background {
-        height: 1580px;
-    }
-  
-      .home-background{
-        height: 900px;
-      }
-    }
-  
-    @media(max-width: 700px){
-      .home-background{
-        height: 900px;
-      }
-  
-      .portfolio-background {
-          height: 1600px;
-      }
-  
-      .contact-background{
-        height: 1300px;
-      }
-    }
-    }
 }
