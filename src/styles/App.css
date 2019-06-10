@@ -142,6 +142,7 @@ button:hover{
   height: fit-content;
   width: 100%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .home-background{
@@ -236,7 +237,7 @@ button:hover{
 
 .Contact a i{
   font-size: 4em;
-  margin: 101px 20px 0 0;
+  margin: 122px 20px 0 0;
 }
   .Contact a i:hover{
     color: #C2E0E0;
@@ -280,6 +281,7 @@ button:hover{
   display: block;
   transition: height linear .3s;
   margin-top: -40px;
+  margin-bottom: 40px;
   color: white;
 }
 
@@ -330,6 +332,7 @@ form .ActiveField{
   max-height: 750px;
   min-height: 750px;
 }
+
 
 .projects{
   background-color: #17161D;
@@ -618,6 +621,7 @@ form .ActiveField{
     overflow: visible;
     margin-bottom: 50px;
     grid-template-columns: 1fr;
+    grid-template-rows: 325px auto;
     max-height: auto;
     min-height: 1300px;
   }
@@ -703,7 +707,7 @@ form .ActiveField{
   }
   
   .Portfolio{
-    min-height: 1100px;
+    min-height: 1250px;
   }
 
   .projects .project-btn-general{
@@ -802,6 +806,7 @@ form .ActiveField{
 
   .Contact button{
     padding: 10px 25px;
+    margin-top: 5px;
   }
 
   .cta-btn{
@@ -923,6 +928,12 @@ form .ActiveField{
 
 @media (max-width: 350px){
 
+  .Portfolio{
+    padding-left: 0;
+    margin-left: 20px;
+    width: 95%;
+  }
+
   .contact-text{
     padding-left: 0;
   }
@@ -931,4 +942,59 @@ form .ActiveField{
     margin-left: 0;
   }
 
+  .Home h1{
+    margin-left: 0px;
+    font-size: 2.3em;
+  }
+  
+  .Home p{
+    margin-left: 0px;
+  }
+
+  .Home .cta-btn{
+    margin-left: 0;
+  }
+
+}
+
+@-moz-document url-prefix() {
+  .portfolio-background {
+      height: 1080px;
+  }
+
+  .home-background{
+    height: 980px;
+  }
+
+  .contact-background{
+    height: 1000px;
+  }
+
+  @media(max-width: 930px){
+    .contact-background{
+      height: 1300px;
+    }
+
+    .portfolio-background {
+      height: 1580px;
+  }
+
+    .home-background{
+      height: 900px;
+    }
+  }
+
+  @media(max-width: 700px){
+    .home-background{
+      height: 900px;
+    }
+
+    .portfolio-background {
+        height: 1600px;
+    }
+
+    .contact-background{
+      height: 1300px;
+    }
+  }
 }

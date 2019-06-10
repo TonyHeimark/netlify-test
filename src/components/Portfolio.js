@@ -74,9 +74,9 @@ export default class App extends React.Component {
       <Transition
         reset
         items={this.state.item}
-        from={{ display: 'none', opacity: 0, transform: 'translate3d(0,100%,0)'}}
+        from={{ display: 'none', opacity: 1, transform: 'translate3d(0,100%,0)'}}
         enter={{ display: 'block', opacity: 1, transform: 'translate3d(0,0%,0)'}}
-        leave={{ display: 'none', opacity: 0 ,  transform: 'translate3d(0,-50%,0)'}}
+        leave={{ display: 'none', opacity: 1 ,  transform: 'translate3d(0,-50%,0)'}}
         config={ config.slow }
       >
       {show => show && (props => (
